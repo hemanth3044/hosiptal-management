@@ -1,0 +1,210 @@
+DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE[SYSTEM on HMS]","HMS", "HMS");
+
+String Query="INSERT INTO DOCTOR VALUES (2,2,2,2,3,3,3,2,2y":
+
+pst = (PreparedStaement) con.prepareStatement(Query);
+
+pst.setString(1.jTextField1.getText());
+
+pst.setString(2.jTextField2.getText());
+
+pst.setString(3.jTextField3.getText());
+
+pst.setString(4,jTextField4.getText());
+
+pst.setString(5.jTextField5.getText());
+
+pst.setString(6.jTextField6.getText());
+
+pst.setString(7.jTextField7.getText());
+
+pst.setString(8.jTextField8.getText());
+
+pst.setString(9.jTextField9.getText());
+
+pst.executeUpdate();
+
+JoptionPane.showMessageDialog(null,"SUCESSFULLY ADDED");
+
+jTextField1.setText("");
+
+jTextField2.setText("");
+JTextField3.setText();
+
+jTextField4.setText("");
+
+JTextField5.setText();
+
+jTextField6.setText("");
+
+jTextField7.setText("");
+
+jTextField8.setText("");
+
+jTextField9.setText(");
+
+}
+
+catch(Exception e)
+
+{
+
+JoptionPane.showMessageDialog(null,e);
+
+}
+
+}
+
+private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
+
+// TODO add your handling code here:
+
+int a-JoptionPane.showConfirmDialog(null," e.showConfirmDialog(null,"DO YOU REALLY WANT TO DELETE", "SELECT", JoptionPane. YES_NO_OPTION);
+
+if(a=0)
+
+{
+
+String sql="DELETE FROM DOCTOR WHERE DOCTOR_ID=?";
+
+try
+
+{
+
+pst-(PreparedStaement) con.prepareStatement(sql);
+
+pst.setString(1.jTextField1.getText());
+
+pst.execute();
+JoptionPane.showMessageDialog(null," SUCESSFULLY DELETED");
+
+}
+
+catch(Exception e)
+
+JoptionPane.showMessageDialog(null,e);
+
+}
+
+}
+
+}
+
+* @param args the command line arguments
+
+public static void main(String args[]) {
+
+/* Set the Nimbus look and feel */
+
+//<editor-fold defaultstate="collared" desc" Look and feel setting code (optional)
+
+"> /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+
+*Fordetailssee http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
+
+try {
+
+for (javax.swing.UIManager.LookAndFeelInfo javax.swing.UIManager.getInstalledLookAndFeels()) {
+
+info
+
+}
+
+if ("Nimbus".equals(info.getName())) {
+
+javax.swing.UIManager.setLookAndFeel(info.getClassName());
+
+break;
+}
+
+*/
+)
+
+} catch (ClassNotFoundException ex) {
+
+java.util.logging.Logger.getLogger(DOCTOR.class.getName()).log(java.util.logging.Le vel.SEVERE, null, ex);
+
+} catch (InstantiationException ex) {
+
+java.util.logging.Logger.getLogger(DOCTOR.class.getName().log(java.util.logging.Le vel.SEVERE, null, ex);
+
+} catch (IllegalAccessException ex) {
+
+java.util.logging.Logger.getLogger(DOCTOR.class.getName()).log(java.util.logging.Le vel.SEVERE, null, ex);
+
+} catch (javax.swing. UnsupportedLookAndFeelException ex) (
+
+java.util.logging.Logger.getLogger(DOCTOR.class.getName()).log(java.util.logging.Le vel.SEVERE, null, ex);
+
+}
+
+//</editor-fold>
+
+/ Create and display the form */
+
+java.awt.EventQueue.invokeLater(new Runnable() {
+
+public void run() {
+
+new DOCTOR().setVisible(true);
+
+}
+
+});
+
+}
+
+// Variables declaration - do not modify
+
+private javax.swing.Jbutton jButton1;
+
+private javax.swing.Jbutton jButton2;
+
+private javax.swing.Jbutton jButton3;
+private javax.swing.Jbutton jButton4;
+
+private javax.swing.Jbutton jButton5;
+
+private javax.swing.Jlabel jLabell;
+
+private javax.swing.Jlabel jLabel10;
+
+private javax.swing.Jlabel jLabel11;
+
+private javax.swing.Jlabel jLabel2;
+
+private javax.swing.Jlabel jLabel3;
+
+private javax.swing.Jlabel jLabel4;
+
+private javax.swing.Jlabel jLabel5;
+
+private javax.swing.Jlabel jLabel6;
+
+private javax.swing.Jlabel jLabel7;
+
+private javax.swing.Jlabel jLabel8;
+
+private javax.swing.Jlabel jLabel9;
+
+private javax.swing.Jpanel jPanell
+
+private javax.swing.JtextField jTextField1;
+
+private javax.swing.JtextField jTextField2;
+
+private javax.swing.JtextField jTextField3;
+
+private javax.swing.JtextField jTextField4;
+
+private javax.swing.JtextField jTextField5;
+
+private javax.swing.JtextField jTextField6;
+
+private javax.swing.JtextField jTextField7;
+
+private javax.swing.JtextField jTextField8;
+
+private javax.swing.JtextField jTextField9;
+
+// End of variables declaration

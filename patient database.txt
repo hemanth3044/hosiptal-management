@@ -1,0 +1,220 @@
+Patient details data base
+con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE[SYSTEM on HMS]","HMS", "HMS");
+
+String Query="INSERT INTO PATIENT VALUES(?,?,?,?,3,2,2,2,2)";
+
+pst (PreparedStaement) con.prepareStatement(Query);
+
+pst.setString(1.jTextField1.getText());
+
+pst.setString(2.jTextField2.getText());
+
+pst.setString(3.jTextField3.getText());
+
+pst.setString(4.jTextField4.getText());
+
+pst.setString(5.jTextField5.getText());
+
+pst.setString(6.jTextField6.getText());
+
+pst.setString(7.jTextField7.getText());
+
+pst.setString(8.jTextField8.getText());
+
+pst.setString(9.jTextField9.getText());
+
+Pst.executeUpdate();
+JoptionPane.showMessageDialog(null, "SUCESSFULLY ADDED");
+
+jTextField1.setText("");
+
+jTextField2.setText();
+
+jTextField3.setText("");
+
+jTextField4.setText("");
+
+jTextField5.setText("");
+
+jTextField6.setText("");
+
+jTextField7.setText("");
+
+jTextField8.setText("");
+
+jTextField9.setText();
+
+}
+
+catch(Exception e)
+
+{
+
+JoptionPane.showMessageDialog(null,e);
+
+}
+
+}
+
+private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
+
+// TODO add your handling code here:
+
+try
+
+{
+
+Connection con-ConnectionProvider.getCon();
+
+Statement st-con.createStatement();
+
+ResultSet rs-st.executeQuery("SELECT FROM PATIENT WHERE
+
+DOCTOR_ID='"+PATIENT_ID+"'");
+
+if(rs.next())
+{
+
+jTextField2.setText(rs.getString(2));
+
+jTextField3.setText(rs.getString(3));
+
+jTextField4.setText(rs.getString(4));
+
+jTextField5.setText(rs.getString(5));
+
+jTextField6.setText(rs.getString(6));
+
+jTextField7.setText(rs.getString(7));
+
+jTextField8.setText(rs.getString(8));
+
+jTextField9.setText(rs.getString(9));
+
+jTextField1.setEditable(false);
+
+}
+
+else
+
+JoptionPane.showMessageDialog(null, "PATIENT_ID DOESN'T EXIST");
+
+}
+
+catch(Exception e)
+
+{
+
+JoptionPane.showMessageDialog(null,e);
+
+}
+
+}
+
+**/
+
+* @param args the command line arguments
+
+*/
+
+public static void main(String args[]) {
+//<editor-fold defaultstate="collapsed" desc" Look and feel setting code (optional) ">
+
+/* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+
+•Fordetailssee http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
+
+try {
+
+for (javax.swing.UIManager.LookAndFeelinfo
+
+javax.swing.UIManager.getInstalledLookAndFeels()) {
+
+if ("Nimbus".equals(info.getName())) {
+
+javax.swing. UIManager.setLookAndFeel(info.getClassName());
+
+break;
+
+info
+
+}
+
+}
+
+} catch (ClassNotFoundException ex) {
+
+java.util.logging.Logger.getLogger(PATIENT.class.getName()).log(java.util.logging.Le vel.SEVERE, null, ex);
+
+} catch (InstantiationException ex) {
+
+java.util.logging.Logger.getLogger(PATIENT.class.getName()).log(java.util.logging.Le vel.SEVERE, null, ex);
+
+} catch (IllegalAccessException ex) {
+
+java.util.logging.Logger.getLogger(PATIENT.class.getName()).log(java.util.logging.Le vel.SEVERE, null, ex);
+
+} catch (javax.swing. UnsupportedLookAndFeelException ex) {
+
+java.util.logging.Logger.getLogger(PATIENT.class.getName()).log(java.util.logging.Le vel.SEVERE, null, ex);
+/* Set the Nimbus look and feel */
+}
+
+//</editor-fold>
+
+Create and display the form /
+
+java.awt.EventQueue.invokeLater(new Runnable() {
+
+public void run() {
+
+new PATIENT().setVisible(true);
+
+}
+
+});
+
+}
+
+// Variables declaration - do not modify
+
+private javax.swing.Jbutton jButton1;
+
+private javax.swing.Jbutton jButton2;
+
+private javax.swing.Jbutton jButton3;
+
+private javax.swing.Jlabel jLabell
+
+private javax.swing.Jlabel jLabel10;
+
+private javax.swing.Jlabel jLabel2;
+
+private javax.swing.Jlabel jLabel3;
+
+private javax.swing.Jlabel jLabel4;
+
+private javax.swing.Jlabel jLabel5;
+
+private javax.swing.Jlabel jLabel6;
+
+private javax.swing.Jlabel jLabel7;
+
+private javax.swing.Jlabel jLabel8;
+
+private javax.swing.Jlabel jLabel9;
+
+private javax.swing.JtextField jTextField1;
+private javax.swing.JtextField jTextField2;
+
+private javax.swing.JtextField jTextField3;
+
+private javax.swing.JtextField jTextField4;
+
+private javax.swing.JtextField jTextField5;
+
+private javax.swing.JtextField jTextField6;
+
+private javax.swing.JtextField jTextField7;
+
+private javax.swing.JtextField jTextField8;
